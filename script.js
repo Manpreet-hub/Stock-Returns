@@ -26,12 +26,12 @@ function calculateProfitAndLoss(initial,quantity,current){
   else if(current>initial){
     var profit=(current-initial)*quantity;
     var profitPercentage=Math.round((profit/initial)*100);
-  showMessage(`🤩 Wow the profit is ${profit} and the percent is ${profitPercentage} % 
-  color:green;`);
+  showMessage(`🤩 Wow the profit is ${profit} and the percent is ${profitPercentage} % `);
    outputBox.style.backgroundColor="green";
   }
   else{
     showMessage("No profit and No Loss");
+    outputBox.style.backgroundColor="#E0C097";
 
   }
 }
